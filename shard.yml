@@ -1,0 +1,9 @@
+name: dark-sky
+version: 1.0.0
+
+authors:
+  - D. Scott Boggs <scott@tams.tech>
+
+crystal: 0.27.0
+
+license: MIT
