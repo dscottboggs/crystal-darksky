@@ -1,3 +1,4 @@
+require "json"
 module DarkSky
   struct Alert
     include JSON::Serializable
