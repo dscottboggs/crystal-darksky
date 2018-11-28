@@ -23,7 +23,7 @@ ENV["darksky_api_key"] = "your-api-key-here"
 
 weather = DarkSky::Forecast.new(longitude: -58.47028, latitude: -34.52959)
 weather.retreive # current weather
-weathe.at(Time.now + 1.day) # weather tomorrow.
+weathe.at(1.day.from_now) # weather tomorrow.
 
 ```
 
