@@ -1,8 +1,8 @@
 module DarkSky
   struct DataBlock
     include JSON::Serializable
-    property summary : String?
-    property icon : String?
-    property data : Array(DataPoint)?
+    getter summary : String?
+    getter icon : String?
+    getter data : Array(DataPoint)?
   end
 end

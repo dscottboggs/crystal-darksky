@@ -2,12 +2,12 @@ require "json"
 module DarkSky
   struct Alert
     include JSON::Serializable
-    property title : String?
-    property regions : Array(String)?
-    property severity : String?
-    property description : String?
-    property time : Int64?
-    property expires : Float64
-    property uri : String?
+    getter title : String?
+    getter regions : Array(String)?
+    getter severity : String?
+    getter description : String?
+    getter time : Int64?
+    getter expires : Float64
+    getter uri : String?
   end
 end

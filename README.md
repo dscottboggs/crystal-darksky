@@ -19,10 +19,10 @@ dependencies:
 ```crystal
 require "dark-sky"
 
-ENV["darksky_api_key"] = "your-api-key-here"
+DarkSky.api_key = ENV["darksky_api_key"]? || "your-api-key-here"
 
 weather = DarkSky::Forecast.new(longitude: -58.47028, latitude: -34.52959)
-weather.retreive # current weather
+weather.retreive.currently # current weather
 weathe.at 1.day.from_now # weather tomorrow.
 
 ```

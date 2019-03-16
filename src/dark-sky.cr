@@ -8,9 +8,7 @@ module DarkSky
   BASE_URL         = "https://api.darksky.net/forecast"
   DEFAULT_LANUGAGE = Languages::English
   DEFAULT_UNITS    = Units::US
-  @@api_key : String? = nil
-
-  def self.api_key
-    @@api_key ||= ENV["darksky_api_key"]? || File.read("API_KEY").chomp
+  class_property api_key : String? do
+    ENV["darksky_api_key"]? || File.read("API_KEY").chomp
   end
 end

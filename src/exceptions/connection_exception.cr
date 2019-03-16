@@ -1,5 +1,5 @@
 class ConnectionException < Exception
   def initialize(response, url)
-    super "got #{response.status_code} from #{url}: #{response.body.gets}"
+    super "got #{response.status_code} from #{url}: #{response.body}"
   end
 end
